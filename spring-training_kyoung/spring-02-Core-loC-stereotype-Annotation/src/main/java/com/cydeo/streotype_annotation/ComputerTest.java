@@ -2,6 +2,7 @@ package com.cydeo.streotype_annotation;
 
 import com.cydeo.streotype_annotation.casefactory.Case;
 import com.cydeo.streotype_annotation.config.PcConfig;
+import com.cydeo.streotype_annotation.monitorfactory.AcerMonitor;
 import com.cydeo.streotype_annotation.monitorfactory.Monitor;
 import com.cydeo.streotype_annotation.motherboardfactory.Motherboard;
 import org.springframework.context.ApplicationContext;
@@ -18,6 +19,13 @@ public class ComputerTest {
         System.out.println(theMonitor.getSize());
         System.out.println(theCase.getModel());
         System.out.println(theMotherboard.getModel());
+
+        Monitor theMonitor2 = (Monitor)container.getBean("acerMonitor");
+        System.out.println(theMonitor2.getSize());
+        Monitor theMonitor3= container.getBean(AcerMonitor.class);
+        System.out.println(theMonitor3);
+
+
 
         PC myPc5= new PC(theCase,theMonitor,theMotherboard);
        // System.out.println(myPc5);
