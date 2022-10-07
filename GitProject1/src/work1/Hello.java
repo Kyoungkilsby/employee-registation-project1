@@ -11,6 +11,8 @@ public class Hello {
 
         System.out.println("Re new Git Practice");
 
+        System.out.println("Local Repository is already published to GitHub");
+
 
     }
 }
