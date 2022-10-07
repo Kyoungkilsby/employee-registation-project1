@@ -9,6 +9,8 @@ public class Hello {
 
         System.out.println("commit");
 
+        System.out.println("Re new Git Practice");
+
 
     }
 }
